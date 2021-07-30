@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.SystemColor;
+import javax.swing.JRadioButton;
 
 public class ScientficCalculator {
 
@@ -48,11 +49,11 @@ public class ScientficCalculator {
 		
 		JLabel lblNewLabel = new JLabel("SCIENTFIC CALCULATOR");
 		lblNewLabel.setFont(new Font("-윤고딕330", Font.BOLD, 24));
-		lblNewLabel.setBounds(10, 10, 296, 40);
+		lblNewLabel.setBounds(61, 0, 296, 49);
 		frame.getContentPane().add(lblNewLabel);
 		
 		textField = new JTextField();
-		textField.setBounds(10, 60, 405, 70);
+		textField.setBounds(10, 48, 405, 60);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 		
@@ -63,7 +64,7 @@ public class ScientficCalculator {
 		btnNewButton.setBounds(10, 140, 73, 70);
 		frame.getContentPane().add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("0");
+		JButton btnNewButton_1 = new JButton("x^2");
 		btnNewButton_1.setFont(new Font("배달의민족 주아", Font.PLAIN, 18));
 		btnNewButton_1.setBounds(10, 219, 73, 70);
 		frame.getContentPane().add(btnNewButton_1);
@@ -74,7 +75,11 @@ public class ScientficCalculator {
 		frame.getContentPane().add(btnNewButton_2);
 		
 		JButton btnNewButton_3 = new JButton("0");
-		btnNewButton_3.setFont(new Font("배달의민족 주아", Font.PLAIN, 18));
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		btnNewButton_3.setBounds(10, 379, 73, 70);
 		frame.getContentPane().add(btnNewButton_3);
 		
@@ -97,8 +102,8 @@ public class ScientficCalculator {
 		btnIn.setBounds(10, 619, 73, 70);
 		frame.getContentPane().add(btnIn);
 		
-		JButton btnCos = new JButton("Cos");
-		btnCos.setFont(new Font("배달의민족 주아", Font.PLAIN, 18));
+		JButton btnCos = new JButton("\u03C0");
+		btnCos.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		btnCos.setBounds(93, 140, 73, 70);
 		frame.getContentPane().add(btnCos);
 		
@@ -132,7 +137,7 @@ public class ScientficCalculator {
 		btnNewButton_13.setBounds(93, 619, 73, 70);
 		frame.getContentPane().add(btnNewButton_13);
 		
-		JButton btnTan = new JButton("Tan");
+		JButton btnTan = new JButton("e");
 		btnTan.setFont(new Font("배달의민족 주아", Font.PLAIN, 18));
 		btnTan.setBounds(176, 140, 73, 70);
 		frame.getContentPane().add(btnTan);
@@ -236,6 +241,11 @@ public class ScientficCalculator {
 		btnNewButton_34.setFont(new Font("배달의민족 주아", Font.PLAIN, 18));
 		btnNewButton_34.setBounds(342, 619, 73, 70);
 		frame.getContentPane().add(btnNewButton_34);
+		
+		JRadioButton rdbtnNewRadioButton = new JRadioButton("\uC0BC\uAC01\uBC95");
+		rdbtnNewRadioButton.setFont(new Font("배달의민족 주아", Font.PLAIN, 12));
+		rdbtnNewRadioButton.setBounds(10, 114, 73, 23);
+		frame.getContentPane().add(rdbtnNewRadioButton);
 		frame.setBounds(100, 100, 437, 732);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
