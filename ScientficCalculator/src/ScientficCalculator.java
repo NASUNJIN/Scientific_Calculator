@@ -57,7 +57,7 @@ public class ScientficCalculator {
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Sin");
+		JButton btnNewButton = new JButton("2^nd");
 		btnNewButton.setForeground(new Color(0, 0, 0));
 		btnNewButton.setBackground(SystemColor.control);
 		btnNewButton.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
@@ -69,26 +69,26 @@ public class ScientficCalculator {
 		btnNewButton_1.setBounds(10, 219, 73, 70);
 		frame.getContentPane().add(btnNewButton_1);
 		
-		JButton btnNewButton_2 = new JButton("0");
-		btnNewButton_2.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
+		JButton btnNewButton_2 = new JButton("\u221A");
+		btnNewButton_2.setFont(new Font("³ª´®°íµñ ExtraBold", Font.BOLD, 18));
 		btnNewButton_2.setBounds(10, 299, 73, 70);
 		frame.getContentPane().add(btnNewButton_2);
 		
-		JButton btnNewButton_3 = new JButton("0");
+		JButton btnNewButton_3 = new JButton("x^y");
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnNewButton_3.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
 		btnNewButton_3.setBounds(10, 379, 73, 70);
 		frame.getContentPane().add(btnNewButton_3);
 		
-		JButton btnNewButton_4 = new JButton("\u221A");
+		JButton btnNewButton_4 = new JButton("10^x");
 		btnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnNewButton_4.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnNewButton_4.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
 		btnNewButton_4.setBounds(10, 459, 73, 70);
 		frame.getContentPane().add(btnNewButton_4);
 		
@@ -103,7 +103,7 @@ public class ScientficCalculator {
 		frame.getContentPane().add(btnIn);
 		
 		JButton btnCos = new JButton("\u03C0");
-		btnCos.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnCos.setFont(new Font("³ª´®½ºÄù¾î Bold", Font.PLAIN, 18));
 		btnCos.setBounds(93, 140, 73, 70);
 		frame.getContentPane().add(btnCos);
 		
@@ -138,7 +138,7 @@ public class ScientficCalculator {
 		frame.getContentPane().add(btnNewButton_13);
 		
 		JButton btnTan = new JButton("e");
-		btnTan.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
+		btnTan.setFont(new Font("³ª´®½ºÄù¾î ExtraBold", Font.PLAIN, 18));
 		btnTan.setBounds(176, 140, 73, 70);
 		frame.getContentPane().add(btnTan);
 		
@@ -217,28 +217,28 @@ public class ScientficCalculator {
 		btnMod.setBounds(342, 219, 73, 70);
 		frame.getContentPane().add(btnMod);
 		
-		JButton btnNewButton_30 = new JButton("/");
-		btnNewButton_30.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
+		JButton btnNewButton_30 = new JButton("\u00F7");
+		btnNewButton_30.setFont(new Font("³ª´®°íµñ ExtraBold", Font.BOLD, 22));
 		btnNewButton_30.setBounds(342, 299, 73, 70);
 		frame.getContentPane().add(btnNewButton_30);
 		
-		JButton btnX = new JButton("X");
-		btnX.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
+		JButton btnX = new JButton("\u00D7");
+		btnX.setFont(new Font("³ª´®°íµñ ExtraBold", Font.PLAIN, 22));
 		btnX.setBounds(342, 379, 73, 70);
 		frame.getContentPane().add(btnX);
 		
 		JButton btnNewButton_32 = new JButton("-");
-		btnNewButton_32.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
+		btnNewButton_32.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· µµÇö", Font.PLAIN, 22));
 		btnNewButton_32.setBounds(342, 459, 73, 70);
 		frame.getContentPane().add(btnNewButton_32);
 		
 		JButton btnNewButton_33 = new JButton("+");
-		btnNewButton_33.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
+		btnNewButton_33.setFont(new Font("³ª´®½ºÄù¾î Bold", Font.PLAIN, 22));
 		btnNewButton_33.setBounds(342, 539, 73, 70);
 		frame.getContentPane().add(btnNewButton_33);
 		
 		JButton btnNewButton_34 = new JButton("=");
-		btnNewButton_34.setFont(new Font("¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ", Font.PLAIN, 18));
+		btnNewButton_34.setFont(new Font("³ª´®½ºÄù¾î Bold", Font.PLAIN, 18));
 		btnNewButton_34.setBounds(342, 619, 73, 70);
 		frame.getContentPane().add(btnNewButton_34);
 		
